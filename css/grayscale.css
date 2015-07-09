@@ -164,6 +164,11 @@ a:focus {
     font-size: 40px;
 }
 
+.intro .intro-body .brand-subtitle {
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14.4px;
+}
+
 .intro .intro-body .intro-text {
     font-size: 18px;
 }
@@ -178,9 +183,16 @@ a:focus {
         font-size: 100px;
     }
 
+    .intro .intro-body .brand-subtitle {
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 36px;
+}
+
     .intro .intro-body .intro-text {
         font-size: 26px;
     }
+
+    
 }
 
 .btn-circle {
