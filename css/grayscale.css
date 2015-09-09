@@ -451,3 +451,9 @@ body {
 .contact-input {
     width: 75%;
 }
+
+.modal-content {
+    color: #000;
+    text-align: left;
+}
+
