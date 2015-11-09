@@ -39,27 +39,6 @@
 
 </head>
 
-<?php
-
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
-
-$from = "Church Contact Form";
-$to ="example@domain.com";
-$subject = "Message from Church Contact Form";
-
-$body = "From: $name\n E-Mail: $email\n Message:\n $message";
-
-if (!$_POST['name']) {
-    $errName = 'Please enter your name';
-}
-
-if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-    $errEmail = "Please enter a valid email address";
-}
-
-?>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
@@ -91,10 +70,7 @@ if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
                     <li>
                         <a class="page-scroll" href="#outreach">Outreach</a>
                     </li>
-                     <li>
-                        <a class="page-scroll" href="#media">Media</a>
-                    </li>
-                     <li>
+                    <li>
                         <a class="page-scroll" href="staff.html">Staff</a>
                     </li>
                 </ul>
@@ -132,7 +108,7 @@ if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
                 <p>The Cross Worship Center is a ministry that believes in God the Father, God the Son, and God the Holy Spirit. </p>
                 <p>The sole basis of our beliefs is contained in God’s written and infallible Word, the Holy Bible.</p>
                 <p>Click here to learn more about what we believe.</p>
-                <a href="#" target="_blank" class="btn btn-contact btn-lg">Visit Beliefs Page</a>
+                <a href="beliefs.html" class="btn btn-contact btn-lg">Visit Beliefs Page</a>
             </div>
         </div>
     </section>

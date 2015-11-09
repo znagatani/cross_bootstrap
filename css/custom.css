@@ -26,11 +26,6 @@ body {
 	position: relative;
 }
 
-#comm-bg {
-	background: url('../img/community-full.jpg') no-repeat center center;
-	background-size: cover;
-}
-
 .body {
 	padding-bottom: 150px;
 	width: 100%;
@@ -61,6 +56,12 @@ footer {
 
 /* Staff */
 
+#staff-bg {
+	background: url('../img/room.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
 #staff img {
 	width: 300px;
 	height: 198px;
@@ -75,8 +76,15 @@ footer {
 #staff .container {
 		background: rgba(0, 0, 0, 0.5);
 		padding: 20px;
+		padding-top: 50px;
 	}
 
+
+#staff img {
+	float: left;
+	margin-right: 70px;
+	margin-bottom: 10px;
+}
 
 .ministry {
 	padding-bottom: 200px;
@@ -86,12 +94,56 @@ footer {
 	padding-top: 200px;
 }
 
+.staff-row {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
 /* OUTREACH */
 
 #outreach-bg {
 	background: url('../img/city4.jpg') no-repeat center center;
 	background-size: cover;
 	background-position: center;
+}
+
+#outreach-section img {
+	width: 300px;
+	height: 198px;
+}
+
+#outreach-section {
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+#outreach-section .container {
+		background: rgba(0, 0, 0, 0.5);
+		padding: 20px;
+}
+
+/* COMMUNITY */
+
+#comm-bg {
+	background: url('../img/community-full.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+#community-section img {
+	width: 300px;
+	height: 198px;
+}
+
+#community-section {
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+#community-section .container {
+		background: rgba(0, 0, 0, 0.5);
+		padding: 20px;
 }
 
 /* BELIEFS */
@@ -107,4 +159,20 @@ footer {
 
 .beliefs-container {
 	padding-top: 50px;
+}
+
+#beliefs-section img {
+	width: 300px;
+	height: 198px;
+}
+
+#beliefs-section {
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+#beliefs-section .container {
+		background: rgba(0, 0, 0, 0.5);
+		padding: 20px;
 }

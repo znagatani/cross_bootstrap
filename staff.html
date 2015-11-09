@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -38,29 +39,10 @@
 
 </head>
 
-<?php
-
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
-
-$from = "Church Contact Form";
-$to ="example@domain.com";
-$subject = "Message from Church Contact Form";
-
-$body = "From: $name\n E-Mail: $email\n Message:\n $message";
-
-if (!$_POST['name']) {
-    $errName = 'Please enter your name';
-}
-
-if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-    $errEmail = "Please enter a valid email address";
-}
-
-?>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <div class="wrapper" id="staff-bg">
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -69,7 +51,7 @@ if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
+                <a class="navbar-brand page-scroll" href="index.html">
                     <!-- <i class="fa fa-play-circle"></i> -->  <span class="light" style="font-size: 14px">The Cross Worship Center</span>
                 </a>
             </div>
@@ -82,19 +64,16 @@ if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Beliefs</a>
+                        <a class="page-scroll" href="beliefs.html">Beliefs</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Community</a>
+                        <a class="page-scroll" href="community.html">Community</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#outreach">Outreach</a>
+                        <a class="page-scroll" href="outreach.html">Outreach</a>
                     </li>
-                     <li>
-                        <a class="page-scroll" href="#media">Media</a>
-                    </li>
-                     <li>
-                        <a class="page-scroll" href="#contact">Staff</a>
+                    <li>
+                        <a class="page-scroll" href="staff.html">Staff</a>
                     </li>
                 </ul>
             </div>
@@ -104,20 +83,75 @@ if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
     </nav>
 
 <!-- Feature Image -->
+    <div class="body">
 
-    <section class="page-header">
-            <h1 class="text-center">Staff</h1>
+    <!-- <section class="feature-image feature-image-community">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-md-offset-5">
+                    <h1>Community</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2>We need each other. Find a place to plug in!</h2>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+<!-- Staff Section -->
+
+    <div class="container">
+        <div class="row heading">
+                <div class="col-md-3 col-centered">
+                    <h1>Staff</h1>
+                </div>
+            </div>
+    </div>
+    <section id="staff">
+        <div class="container margin-bottom">
+                <!-- <div class="col-md-4 col-md-offset-1">
+                    <img src="img/punch.jpg" alt="A picture of Pastor Javier and his wife Lorna" title="Javier">
+                </div> -->
+            <div class="row staff-row">
+                <div class="col-md-10 col-centered">
+	                <img src="img/javier.jpg" alt="A picture of Pastor Javier and his wife Lorna" title="Javier">
+	                <h3>Name</h3>
+	                <h4>Position</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus libero, eleifend ut feugiat eget, facilisis quis lectus. Morbi enim purus, interdum at velit et, ullamcorper fringilla massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus libero, eleifend ut feugiat eget, facilisis quis lectus. Morbi enim purus, interdum at velit et, ullamcorper fringilla massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus libero, eleifend ut feugiat eget, facilisis quis lectus. Morbi enim purus, interdum at velit et, ullamcorper fringilla massa.
+                </div>
+            </div><!-- row -->
+        </div><!-- container -->
+
+
+        <div class="container margin-bottom">
+            <div class="row staff-row">
+                <div class="col-md-10 col-centered">
+	                <img src="img/jeff.jpg" alt="A picture of Pastor Javier and his wife Lorna" title="Javier">
+	                <h3>Name</h3>
+	                <h4>Position</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus libero, eleifend ut feugiat eget, facilisis quis lectus. Morbi enim purus, interdum at velit et, ullamcorper fringilla massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus libero, eleifend ut feugiat eget, facilisis quis lectus. Morbi enim purus, interdum at velit et, ullamcorper fringilla massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus libero, eleifend ut feugiat eget, facilisis quis lectus. Morbi enim purus, interdum at velit et, ullamcorper fringilla massa.
+                </div>
+            </div><!-- row -->
+        </div><!-- container -->
+
+
+        <div class="container margin-bottom">
+            <div class="row staff-row">
+                <div class="col-md-10 col-centered">
+	                <img src="img/punch.jpg" alt="A picture of Pastor Javier and his wife Lorna" title="Javier">
+	                <h3>Name</h3>
+	                <h4>Position</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus libero, eleifend ut feugiat eget, facilisis quis lectus. Morbi enim purus, interdum at velit et, ullamcorper fringilla massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus libero, eleifend ut feugiat eget, facilisis quis lectus. Morbi enim purus, interdum at velit et, ullamcorper fringilla massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus libero, eleifend ut feugiat eget, facilisis quis lectus. Morbi enim purus, interdum at velit et, ullamcorper fringilla massa.
+                </div>
+            </div><!-- row -->
+		</div><!-- container -->
     </section>
 
-<!-- Staff -->
 
-
-
-
-
-
-   <!--  <!-- Map Section -->
-  <!--   <div id="map">
+    <!-- Map Section -->
+    <!-- <div id="map">
 
         <iframe width="100%" height="400px" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB4CM3wDzrihJJkiclqBegxCWb0qi_DgzE&q=6895+Via+Del+Oro,San+Jose,CA+95119"></iframe>
 
@@ -131,6 +165,9 @@ if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
             <p style="font-size: 1em;"> Site by Zach Nagatani. Bootstrap template provided by Start Bootstrap</p>
         </div>
     </footer>
+
+    </div><!-- .body -->
+</div><!-- wrapper -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
