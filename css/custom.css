@@ -91,4 +91,20 @@ footer {
 #outreach-bg {
 	background: url('../img/city4.jpg') no-repeat center center;
 	background-size: cover;
+	background-position: center;
+}
+
+/* BELIEFS */
+
+#beliefs-bg {
+	background: url('../img/bible-coffee.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.margin-bottom {
+	margin-bottom: 100px;
+}
+
+.beliefs-container {
+	padding-top: 50px;
 }
