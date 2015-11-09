@@ -16,7 +16,6 @@
 
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" type="text/css" href="css/custom.css"> -->
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -95,7 +94,7 @@ if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
                         <a class="page-scroll" href="#media">Media</a>
                     </li>
                      <li>
-                        <a class="page-scroll" href="staff.html">Staff</a>
+                        <a class="page-scroll" href="#contact">Staff</a>
                     </li>
                 </ul>
             </div>
@@ -144,7 +143,7 @@ if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Community</h2>
                     <p>At the Cross Worship Center, we recognize that people have a God-given need for community. Click below to get find a place to get plugged in.</p>
-                    <a href="community.html" class="btn btn-default btn-lg">Visit Community Page</a>
+                    <a href="#" class="btn btn-default btn-lg">Visit Community Page</a>
                 </div>
             </div>
         </div>
@@ -227,9 +226,10 @@ if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
                 </div>
             
                 <div class="modal-footer">
-
                   <button class="btn btn-default" data-dismiss="modal">Close</button>
-                  <button class="btn btn-success">Send it!</button>
+                  <button class="btn btn-success"><input id="submit" name="submit" type="submit" value="Send It!" class="btn btn-primary">
+        </button>
+        </div>
 
                 </div>
 
