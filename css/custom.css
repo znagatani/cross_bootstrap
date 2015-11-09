@@ -85,3 +85,10 @@ footer {
 .padding-top {
 	padding-top: 200px;
 }
+
+/* OUTREACH */
+
+#outreach-bg {
+	background: url('../img/city4.jpg') no-repeat center center;
+	background-size: cover;
+}
