@@ -37,6 +37,16 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <style type="text/css">
+        #staff {
+            padding-bottom: 200px;
+        }
+
+        * {
+            border-radius: 0 !important;
+        }
+    </style>
+
 </head>
 
 
@@ -71,7 +81,7 @@
                         <a class="page-scroll" href="#outreach">Outreach</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="staff.html">Staff</a>
+                        <a class="page-scroll" href="#staff">Staff</a>
                     </li>
                 </ul>
             </div>
@@ -126,6 +136,18 @@
         </div>
     </section>
 
+    <!-- Staff Section -->
+    <section id="staff" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Staff</h2>
+                <p>The Cross's staff is made up of wonderful, Spirit-filled people who simply love Jesus and love people.</p>
+                <p>Click here to meet us!</p>
+                <a href="staff.html" class="btn btn-contact btn-lg">Visit Staff Page</a>
+            </div>
+        </div>
+    </section>
+
    <!--  Outreach Section -->
   <section id="outreach" class="content-section text-center" style="padding-top: 0px;">
         <div class="outreach-section">
@@ -163,7 +185,7 @@
             
                   <button class="close" data-dismiss="modal">&times;</button>
             
-                  <h4 class="modal-title">Contact Us</h4>
+                  <h4 class="modal-title text-center">Contact Us</h4>
             
                 </div>
             
@@ -171,19 +193,17 @@
 
                 <form method="post">
 
-                   <div class="input-group contact-input">
+                   <div class="form-group input-group contact-input">
 
                     <label for="first-name">Name</label>
                     <input type="text" class="form-control modal-sign" id="name" name="name" placeholder="John" />
-                    <?php echo "<p class='text-danger'>$errName</p>"; ?>
 
                   </div>
 
-                  <div class="input-group contact-input">
+                  <div class="form-group input-group contact-input">
 
                     <label for="email">Valid Email</label>
                     <input type="email" class="form-control modal-sign" id="email" name="email" placeholder="example@example.com" />
-                    <?php echo "<p class='text-danger'>$errEmail</p>"; ?>
 
 
                   </div>
@@ -193,7 +213,6 @@
                     <label for="comment">Comment:</label>
 
                     <textarea class="form-control" name="message" placeholder="What's your question, comment, or concern?"></textarea>
-                    <?php echo "<p class='text-danger'>$errMessage</p>"; ?>
 
 
                   </div>
@@ -216,17 +235,17 @@
           </div>
 
 
-                <p></br>And make sure to follow the Cross on social media!</p>
+                <p></br>And make sure to like the Cross on Facebook!</p>
                 <ul class="list-inline banner-social-buttons">
-                    <li>
+                    <!-- <li>
                         <a href="#" target="_blank" class="btn btn-contact btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
+                    </li> -->
                     <li>
-                        <a href="https://www.facebook.com/TheCrossWorshipCenter" target="_blank" class="btn btn-contact btn-lg"><!-- <i class="fa fa-github fa-fw"></i> --> <span class="network-name">Facebook</span></a>
+                        <a href="https://www.facebook.com/TheCrossWorshipCenter" target="_blank" class="btn btn-contact btn-lg"><i class="fa fa-facebook fa-fw"></i><span class="network-name">Facebook</span></a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="#" class="btn btn-contact btn-lg" target="_blank"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
