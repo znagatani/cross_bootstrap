@@ -6,6 +6,10 @@ body {
 	padding: 0;
 }
 
+.white-text {
+	color: white;
+}
+
 .feature-image {
 	width: 100%;
 	height: 270px;
