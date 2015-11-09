@@ -183,3 +183,19 @@ footer {
 		background: rgba(0, 0, 0, 0.5);
 		padding: 20px;
 }
+
+@media screen and (max-width : 992px) {
+		.mobile-center {
+			text-align: center;
+		}
+
+		.mobile-margin-bottom {
+			margin-bottom: 40px;
+		}
+}
+
+@media screen and (max-width: 480px) {
+	.sm-mobile-center {
+		text-align: center;
+	}
+}
